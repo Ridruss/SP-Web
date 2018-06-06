@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato";
+    color: #ffffff;
+}
+
+article {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    background-image: url('img/rectangle.jpg');
+    border: 1px solid #979797;
+}
+
+header {
+    width: 640px;
+    height:176px;
+    margin:40px auto auto;
+    background-image: url('img/rectangle.jpg');
+    background-position: top -40px left -80px;
+    background-color:rgba(74, 74, 74, 0.85);
+    background-blend-mode: multiply;
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20px, 620px 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20px, 620px 0%);
+}
+
+header .content {
+    float: left;
+}
+
+header h1 {
+    margin:32px auto auto 40px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+header ul {
+    margin:16px auto auto 40px;
+    padding: 0;
+}
+
+header ul li:first-child:after {
+    content:'·';
+    margin: auto 10px;
+}
+
+header ul li {
+    display: inline;
+    font-size: 32px; 
+}
+
+header svg {
+    float: right;
+    margin-right: 58px;
+    margin-top: 58px;
+}
+
+article a {
+    position: relative;
+    float: right;
+    width: 337px;
+    height: 77px;
+    margin-top: 266px;
+    margin-right: 80px;
+    padding-left: 32px;
+    font-size: 32px;    
+    line-height: 73px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    border: solid 2px #ffffff;
+    background-position: bottom -43px right -84px;
+    background-image: url('img/rectangle.jpg');
+    background-color: #4a90e2;
+    background-blend-mode: multiply;
+}
+
+article a:after {
+    position: absolute;
+    right: 31px;
+    content: url('svg/chevron.svg');
+}
+
+/*----MS Edge Browser CSS Start----*/
+@supports (-ms-ime-align:auto) {
+    header {
+        background-color: rgba(0, 0,0, 0.55);
+        background-image: none;
+    }
+
+    article a {
+    background-color: rgba(74, 144, 226, 0.85);
+    background-image:none;    
+    }
+}
+/*----MS Edge Browser CSS End----*/
